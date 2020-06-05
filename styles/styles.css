@@ -1,3 +1,22 @@
 * {
     font-family: 'Play', sans-serif;
+    background-color: #232323;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.h2-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.clock-text {
+    font-size: 6rem;
+    font-weight: 900;
 }

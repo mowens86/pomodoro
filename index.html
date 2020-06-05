@@ -25,20 +25,24 @@
         <!-- Pomodoro Clock & Buttons -->
         <section id="pomodoro">
             
-            <svg height="500" width="500">
-                <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#ff5757 ;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-                <circle cx="250" cy="250" r="220" fill="url(#grad1)" />
-                <circle cx="250" cy="250" r="200" stroke="white" fill="transparent" stroke-width="10" />
-                <image x="225" y="100" href="assets/favicon.png"></image>
-                <text x="210" y="170" fill="white">Pomodoro</text>
-                <text x="225" y="250" fill="white">12:53</text>
-                <text x="225" y="275" fill="white">Completed 2/4</text>
-            </svg>
+            <div class="text-align-center">
+                <svg height="500" width="500">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff5757 ;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="250" cy="250" r="220" fill="url(#grad1)" />
+                    <circle cx="250" cy="250" r="200" stroke="white" fill="transparent" stroke-width="10" />
+                    <image x="225" y="100" href="assets/favicon.png"></image>
+                    <text class="h2-text" x="170" y="180" fill="white">Pomodoro</text>
+                    <text class="clock-text" x="135" y="270" fill="white">12:53</text>
+                    <text class="h2-text" x="140" y="330" fill="white">Completed 2/4</text>
+                </svg>
+            </div>
+
+
         </section>
 
         <!-- SoundCloud Widget -->
