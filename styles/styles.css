@@ -1,7 +1,16 @@
 * {
     font-family: 'Play', sans-serif;
     background-color: #232323;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Clock Styles */
 
 .white-text {
     color: #fff;
@@ -9,6 +18,14 @@
 
 .text-align-center {
     text-align: center;
+}
+
+.h1-text, .h2-text n{
+    font-weight: 700;
+}
+
+.h1-text {
+    font-size: 5rem;
 }
 
 .h2-text {
@@ -19,4 +36,20 @@
 .clock-text {
     font-size: 6rem;
     font-weight: 900;
+}
+
+/* Button Styles */
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-img {
+    width: 110px;
+}
+
+.play-btn {
+    font-size: 5rem;
+    color: #fff;
 }
