@@ -1,0 +1,96 @@
+$font-stack: 'Play',
+sans-serif;
+$bg-color: #232323;
+
+* {
+    font-family: $font-stack;
+    background-color: $bg-color;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Clock Styles */
+#pomodoro {
+    display: block;
+    margin: 0 auto;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.h1-text,
+.h2-text n {
+    font-weight: 700;
+}
+
+.h1-text {
+    font-size: 5rem;
+}
+
+.h2-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.clock-text {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+/* Button Styles */
+
+#btn-section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-wrapper {
+    border: 0;
+    cursor: pointer;
+
+    &:focus {
+        outline: 0px;
+    }
+
+    &:hover {
+        .btn-svg {
+            transform: scale(1.05);
+        }
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    .btn-svg {
+        outline: none;
+        transition: transform 0.1s linear;
+    }
+}
+
+.button-img {
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reset-section-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reset-btn-width {
+    width: 350px;
+    margin: 0 auto;
+}

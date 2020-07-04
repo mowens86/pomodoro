@@ -1,55 +1,87 @@
 * {
-    font-family: 'Play', sans-serif;
-    background-color: #232323;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Play", sans-serif;
+  background-color: #232323;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 /* Clock Styles */
+#pomodoro {
+  display: block;
+  margin: 0 auto;
+}
 
 .white-text {
-    color: #fff;
+  color: #fff;
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
-.h1-text, .h2-text n{
-    font-weight: 700;
+.h1-text,
+.h2-text n {
+  font-weight: 700;
 }
 
 .h1-text {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .h2-text {
-    font-size: 2rem;
-    text-transform: uppercase;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .clock-text {
-    font-size: 6rem;
-    font-weight: 900;
+  font-size: 6rem;
+  font-weight: 900;
 }
 
 /* Button Styles */
+#btn-section-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
-#buttons {
-    display: flex;
-    justify-content: center;
+#btn-wrapper {
+  border: 0;
+  cursor: pointer;
+}
+#btn-wrapper:focus {
+  outline: 0px;
+}
+#btn-wrapper:hover .btn-svg {
+  transform: scale(1.05);
+}
+#btn-wrapper::-moz-focus-inner {
+  border: 0;
+}
+#btn-wrapper .btn-svg {
+  outline: none;
+  transition: transform 0.1s linear;
 }
 
 .button-img {
-    width: 110px;
+  width: 110px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.play-btn {
-    font-size: 5rem;
-    color: #fff;
+.reset-section-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.reset-btn-width {
+  width: 350px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <title>Your Pomodoro Clock</title>
 </head>
 
@@ -24,11 +25,11 @@
         </header>
 
         <!-- Pomodoro Clock -->
-        <section id="pomodoro">
-            
+        <section id="pomodoro-wrapper">
+
             <!-- Pomodoro Wrapper -->
             <div class="text-align-center">
-                <svg height="500" width="500">
+                <svg height="480" width="500">
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
@@ -47,13 +48,14 @@
             <!-- End Pomodoro Wrapper -->
 
         </section>
-        <!-- Pomodoro Clock -->
+        <!-- End Pomodoro Clock -->
 
-        <!-- Button Section -->
-        <section id="buttons">
+        <!-- Play/Pause Button Section -->
+        <section id="btn-section-wrapper">
 
-            <div class="text-align-center">
-                <svg height="150" width="150">
+            <!-- Play Button -->
+            <button id="btn-wrapper" onclick="alert('We Gonna Pomodoro');">
+                <svg class="btn-svg" height="150" width="150">
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
@@ -61,14 +63,14 @@
                         </linearGradient>
                     </defs>
                     <circle cx="75" cy="75" r="60" fill="url(#grad1)" />
-                    <a href="">
-                        <image class="button-img" x="20" y="20" href="assets/play.png" alt=""></image>
-                    </a>
+                    <image class="button-img" x="20" y="20" href="assets/play.png" alt=""></image>
                 </svg>
-            </div>
+            </button>
+            <!-- End Play Button -->
 
-            <div class="text-align-center">
-                <svg height="150" width="150">
+            <!-- Pause Button -->
+            <button id="btn-wrapper" onclick="alert('We Not Gonna Pomodoro');">
+                <svg class="btn-svg" height="150" width="150">
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
@@ -76,14 +78,52 @@
                         </linearGradient>
                     </defs>
                     <circle cx="75" cy="75" r="60" fill="url(#grad1)" />
-                    <a href="">
-                        <image class="button-img" x="20" y="20" href="assets/pause.png" alt=""></image>
-                    </a>    
+                    <image class="button-img" x="20" y="20" href="assets/pause.png" alt=""></image>
                 </svg>
-            </div>
-
+            </button>
+            <!-- End Pause Button -->
 
         </section>
+        <!-- End Play/Pause Button Section -->
+
+        <!-- Reset Button Section -->
+        <section id="btn-section-2-wrapper">
+
+            <div class="reset-section-flex">
+
+                <!-- Reset Timer Button -->
+                <button id="btn-wrapper" class="reset-btn-width" onclick="alert('We Gonna Reset The Timer');">
+                    <svg class="btn-svg" height="90" width="350">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ff5757 ;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect id="rect-btn" x="25" y="10" rx="40" ry="40" width="300" height="70" fill="url(#grad1)" />
+                        <text class="h2-text" x="80" y="55" fill="white">RESET TIMER</text>
+                    </svg>
+                </button>
+                <!-- End Reset Timer Button -->
+
+                <!-- Reset Timer Button -->
+                <button id="btn-wrapper" class="reset-btn-width" onclick="alert('We Gonna Reset The Program');">
+                    <svg class="btn-svg" height="90" width="350">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ff5757 ;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect id="rect-btn" x="25" y="10" rx="40" ry="40" width="300" height="70" fill="url(#grad1)" />
+                        <text class="h2-text" x="50" y="55" fill="white">RESET PROGRAM</text>
+                    </svg>
+                </button>
+                <!-- End Reset Timer Button -->
+
+            </div>
+        </section>
+        <!-- End Reset Button Section -->
 
         <!-- SoundCloud Widget -->
         <section>
