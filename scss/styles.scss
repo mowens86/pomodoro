@@ -29,7 +29,8 @@ html {
 }
 
 .h1-text,
-.h2-text n {
+.h2-text,
+.h3-text {
     font-weight: 700;
 }
 
@@ -40,6 +41,10 @@ html {
 .h2-text {
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+.h3-text {
+    font-size: 1.5rem;
 }
 
 .clock-text {
@@ -54,7 +59,10 @@ html {
     justify-content: center;
 }
 
-#btn-wrapper {
+#play-btn,
+#pause-btn,
+#reset-timer-btn,
+#reset-program-btn {
     border: 0;
     cursor: pointer;
 

@@ -40,7 +40,7 @@
                     <circle cx="250" cy="250" r="200" stroke="white" fill="transparent" stroke-width="10" />
                     <image x="225" y="100" href="assets/favicon.png"></image>
                     <text class="h2-text" x="155" y="180" fill="white">Pomodoro</text>
-                    <text class="clock-text" x="125" y="270" fill="white">12:53</text>
+                    <text id="clock-timer" class="clock-text" x="125" y="270" fill="white">25:00</text>
                     <text class="h2-text" x="150" y="320" fill="white">Completed</text>
                     <text class="h1-text" x="190" y="390" fill="white">2/4</text>
                 </svg>
@@ -54,7 +54,7 @@
         <section id="btn-section-wrapper">
 
             <!-- Play Button -->
-            <button id="btn-wrapper" onclick="alert('We Gonna Pomodoro');">
+            <button id="play-btn">
                 <svg class="btn-svg" height="150" width="150">
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -69,7 +69,7 @@
             <!-- End Play Button -->
 
             <!-- Pause Button -->
-            <button id="btn-wrapper" onclick="alert('We Not Gonna Pomodoro');">
+            <button id="pause-btn" onclick="alert('We Not Gonna Pomodoro');">
                 <svg class="btn-svg" height="150" width="150">
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -92,7 +92,7 @@
             <div class="reset-section-flex">
 
                 <!-- Reset Timer Button -->
-                <button id="btn-wrapper" class="reset-btn-width" onclick="alert('We Gonna Reset The Timer');">
+                <button id="reset-timer-btn" class="reset-btn-width" onclick="alert('We Gonna Reset The Timer');">
                     <svg class="btn-svg" height="90" width="350">
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -101,13 +101,13 @@
                             </linearGradient>
                         </defs>
                         <rect id="rect-btn" x="25" y="10" rx="40" ry="40" width="300" height="70" fill="url(#grad1)" />
-                        <text class="h2-text" x="80" y="55" fill="white">RESET TIMER</text>
+                        <text class="h3-text" x="100" y="52" fill="white">RESET TIMER</text>
                     </svg>
                 </button>
                 <!-- End Reset Timer Button -->
 
                 <!-- Reset Timer Button -->
-                <button id="btn-wrapper" class="reset-btn-width" onclick="alert('We Gonna Reset The Program');">
+                <button id="reset-program-btn" class="reset-btn-width" onclick="alert('We Gonna Reset The Program');">
                     <svg class="btn-svg" height="90" width="350">
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -116,7 +116,7 @@
                             </linearGradient>
                         </defs>
                         <rect id="rect-btn" x="25" y="10" rx="40" ry="40" width="300" height="70" fill="url(#grad1)" />
-                        <text class="h2-text" x="50" y="55" fill="white">RESET PROGRAM</text>
+                        <text class="h3-text" x="80" y="52" fill="white">RESET PROGRAM</text>
                     </svg>
                 </button>
                 <!-- End Reset Timer Button -->

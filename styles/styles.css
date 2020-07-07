@@ -25,7 +25,8 @@ html {
 }
 
 .h1-text,
-.h2-text n {
+.h2-text,
+.h3-text {
   font-weight: 700;
 }
 
@@ -36,6 +37,10 @@ html {
 .h2-text {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.h3-text {
+  font-size: 1.5rem;
 }
 
 .clock-text {
@@ -49,20 +54,35 @@ html {
   justify-content: center;
 }
 
-#btn-wrapper {
+#play-btn,
+#pause-btn,
+#reset-timer-btn,
+#reset-program-btn {
   border: 0;
   cursor: pointer;
 }
-#btn-wrapper:focus {
+#play-btn:focus,
+#pause-btn:focus,
+#reset-timer-btn:focus,
+#reset-program-btn:focus {
   outline: 0px;
 }
-#btn-wrapper:hover .btn-svg {
+#play-btn:hover .btn-svg,
+#pause-btn:hover .btn-svg,
+#reset-timer-btn:hover .btn-svg,
+#reset-program-btn:hover .btn-svg {
   transform: scale(1.05);
 }
-#btn-wrapper::-moz-focus-inner {
+#play-btn::-moz-focus-inner,
+#pause-btn::-moz-focus-inner,
+#reset-timer-btn::-moz-focus-inner,
+#reset-program-btn::-moz-focus-inner {
   border: 0;
 }
-#btn-wrapper .btn-svg {
+#play-btn .btn-svg,
+#pause-btn .btn-svg,
+#reset-timer-btn .btn-svg,
+#reset-program-btn .btn-svg {
   outline: none;
   transition: transform 0.1s linear;
 }
