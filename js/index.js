@@ -18,11 +18,19 @@ const playSound = new Audio("assets/play.wav");
 const pauseSound = new Audio("assets/pause.wav");
 const resetTimerSound = new Audio("assets/resettimer.wav");
 const resetProgramSound = new Audio("assets/resetprogram.wav");
-alarmSound.volume = 0.5;
+const menuOpen = new Audio("assets/menuopen.wav");
+const menuClose = new Audio("assets/menuclose.wav");
+alarmSound.volume = 1;
 playSound.volume = 0.5;
 pauseSound.volume = 0.5;
 resetTimerSound.volume = 0.5;
 resetProgramSound.volume = 0.5;
+menuOpen.volume = 0.5;
+menuClose.volume = 0.5;
+
+const overlayModal = document.querySelector("#overlay-modal");
+const openModalButton = document.querySelector(".open-modal-btn");
+const closeModalButton = document.querySelector(".close-modal-btn");
 
 // Countdown timer function
 const timer = (seconds) => {
@@ -104,15 +112,29 @@ const resetProgram = () => {
     storedTime = 0;
     displayTimeLeft(defaultSeconds);
     completeCycle.textContent = `${cycleNumber}/4`;
+    document.title = `Your Pomodoro Clock`;
     clearAllIntervals();
 };
 
 const updateCycleNumber = () => {
     cycleNumber++;
-    completeCycle.textContent = `${cycleNumber}/4`;    
-}
+    completeCycle.textContent = `${cycleNumber}/4`;
+};
+
+const openModal = () => {
+    menuOpen.play();
+    overlayModal.style.width = "70%";
+};
+
+const closeModal = () => {
+    menuClose.play();
+    overlayModal.style.width = "0%";
+};
+
 
 playButton.addEventListener("click", timer);
 pauseButton.addEventListener("click", pauseInterval);
 resetTimerButton.addEventListener("click", resetTimer);
 resetProgramButton.addEventListener("click", resetProgram);
+openModalButton.addEventListener("click", openModal);
+closeModalButton.addEventListener("click", closeModal);

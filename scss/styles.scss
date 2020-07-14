@@ -4,7 +4,6 @@ $bg-color: #232323;
 
 * {
     font-family: $font-stack;
-    background-color: $bg-color;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,12 +11,21 @@ $bg-color: #232323;
 
 html {
     scroll-behavior: smooth;
+    background: $bg-color;
+}
+
+#dark-bg {
+    background: $bg-color;
+    height: 100%;
+    width: 100%;
 }
 
 /* Clock Styles */
 #pomodoro {
     display: block;
     margin: 0 auto;
+    max-width: 550px;
+    min-width: 300px;
 }
 
 .white-text {
@@ -41,6 +49,7 @@ html {
 .h2-text {
     font-size: 2rem;
     text-transform: uppercase;
+    line-height: 1;
 }
 
 .h3-text {
@@ -57,6 +66,7 @@ html {
 #btn-section-wrapper {
     display: flex;
     justify-content: center;
+    
 }
 
 #play-btn,
@@ -65,6 +75,7 @@ html {
 #reset-program-btn {
     border: 0;
     cursor: pointer;
+    background: $bg-color;
 
     &:focus {
         outline: 0px;
@@ -101,4 +112,92 @@ html {
 .reset-btn-width {
     width: 350px;
     margin: 0 auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    background: linear-gradient(#ff914d, #ff5757);
+    padding: 2rem;
+    position: relative;
+    top: 25%;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    max-height: 30rem;
+    overflow-y: auto;
+}
+
+.open-modal-btn-wrapper {
+    padding: 10px 0 0 10px;
+}
+
+.open-modal-btn {
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    background: linear-gradient(#ff914d, #ff5757);
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.close-modal-btn {
+    padding: 0 5px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    background: linear-gradient(#ff914d, #ff5757);
+    display: block;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.overlay-content, .close-modal-btn {
+    border-radius: 10px;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+    color: #fff;
+}
+
+.overlay .close-modal-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 60px;
+}
+
+.ol-styles {
+    padding: 1rem 0 0 1rem;
+}
+
+.li-styles {
+    font-size: 1rem;
+}
+
+.line-height {
+    line-height: 1.5;
+}
+
+.p-top {
+    padding-top: 1rem;
+}
+
+.p-top-2x {
+    padding-top: 2rem;
 }

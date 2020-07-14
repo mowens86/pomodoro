@@ -17,19 +17,43 @@
     <!-- Dark Background Wrapper -->
     <section id="dark-bg">
 
-        <!-- Top Section with Hamburger About Menu -->
-        <header>
-            <section id="hamburger">
-                <p class="white-text">About</p>
-            </section>
-        </header>
+
+        <!-- Overlay Section -->
+        <div id="overlay-modal" class="overlay">
+            <a href="javascript:void(0)" class="close-modal-btn">&times;</a>
+            <div class="overlay-content">
+                <h2 class="h2-text white-text">How to use this app</h2>
+                <ol class="ol-styles">
+                    <li class="li-styles white-text line-height">Decide on the task to get done</li>
+                    <li class="li-styles white-text line-height">Hit the play button and spend 25 minutes on the task
+                    </li>
+                    <li class="li-styles white-text line-height">Take a 5-minute break once the timer goes off</li>
+                    <li class="li-styles white-text line-height">Complete this cycle 4 times and then take a longer
+                        15-minute break</li>
+                </ol>
+                <h2 class="h2-text white-text p-top-2x">What is the Pomodoro Technique?</h2>
+                <p class="white-text line-height p-top">The Pomodoro Technique is a time management method developed by
+                    Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals,
+                    traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro,
+                    from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a
+                    university student. <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Wiki
+                        page</a></p>
+
+                <h3 class="p-top-2x white-text text-align-center">This app was created by Michael Owens</h3>
+            </div>
+        </div>
+        
+        <div class="open-modal-btn-wrapper">
+            <span class="open-modal-btn">&#10095;</span>
+        </div>
+        <!-- End Overlay Section -->
 
         <!-- Pomodoro Clock -->
         <section id="pomodoro-wrapper">
 
             <!-- Pomodoro Wrapper -->
             <div class="text-align-center">
-                <svg height="480" width="500">
+                <svg id="pomodoro" viewbox="2 2 500 480">
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
@@ -93,7 +117,7 @@
 
                 <!-- Reset Timer Button -->
                 <button id="reset-timer-btn" class="reset-btn-width">
-                    <svg class="btn-svg" height="90" width="350">
+                    <svg class="btn-svg" viewbox="0 0 355 90">
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
@@ -108,7 +132,7 @@
 
                 <!-- Reset Timer Button -->
                 <button id="reset-program-btn" class="reset-btn-width">
-                    <svg class="btn-svg" height="90" width="350">
+                    <svg class="btn-svg" viewbox="0 0 355 90">
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" style="stop-color:#ff914d ;stop-opacity:1" />
@@ -124,15 +148,6 @@
             </div>
         </section>
         <!-- End Reset Button Section -->
-
-        <!-- SoundCloud Widget -->
-        <section>
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay
-                src=" https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR
-                PARAMETERS HERE }">
-            </iframe>
-        </section>
-        <!-- End SoundCloud Widget -->
 
     </section>
     <!-- End Dark Background Wrapper -->
