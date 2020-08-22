@@ -121,9 +121,12 @@ const updateCycleNumber = () => {
     completeCycle.textContent = `${cycleNumber}/4`;
 };
 
+console.log(window.innerWidth);
+
+
 const openModal = () => {
     menuOpen.play();
-    overlayModal.style.width = "70%";
+    window.innerWidth <= 600 ? overlayModal.style.width = "100%" : overlayModal.style.width = "70%";
 };
 
 const closeModal = () => {
